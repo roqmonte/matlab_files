@@ -19,22 +19,23 @@
 % 14. hpfilter          : HP filter.
 % 15. IRFar_build       : Function builds IRF for an AR(p) model.
 % 16. iwpQ              : Draw Sigma from Inverse wihart.
-% 17. kfilter_LJ        : Kalman filter from Hamilton's text.
-% 18. LagN              : Generates matrix with lags.
-% 19. loc               : Finds the id of a string in a vector of strings.
-% 20. Mat_sel           : Selects data for given threshold.
-% 21. minMaxMat         : Max/min of a matrix.
-% 22. NWhac             : Computes the Newey & West HAC matrix.
-% 23. shadedplot        : Produces shaded areas between two lines.
-% 24. standardise       : Standardise a set of variables.
-% 25. trimr             : Return a matrix (or vector) stripped of the specified rows.
-% 26. VAR_FEVD_spillover: Predictive directional measurement of volatility spillovers, as in Diebold and Yilmaz (2012).
-% 27. VAR_TestLagLength : Test lag order VAR models.
-% 28. VAR_Plot_fit      : Plot fit and residuals VAR models.
-% 29. VAR_TestBlockExo  : Test BlockExo hypothesis.
-% 30. vec               : Create a matrix stacking the columns of a matrix.
-% 31. VEC_johansen_CV   : Johansen test of cointegration.
-% 32. VEC_johansen_test : Critical values Johansen test of cointegration.
+% 17. KalmanCarterKohn  : Kalman filter and Carter Kohn algorithm.
+% 18. kfilter_LJ        : Kalman filter from Hamilton's text.
+% 19. LagN              : Generates matrix with lags.
+% 20. loc               : Finds the id of a string in a vector of strings.
+% 21. Mat_sel           : Selects data for given threshold.
+% 22. minMaxMat         : Max/min of a matrix.
+% 23. NWhac             : Computes the Newey & West HAC matrix.
+% 24. shadedplot        : Produces shaded areas between two lines.
+% 25. standardise       : Standardise a set of variables.
+% 26. trimr             : Return a matrix (or vector) stripped of the specified rows.
+% 27. VAR_FEVD_spillover: Predictive directional measurement of volatility spillovers, as in Diebold and Yilmaz (2012).
+% 28. VAR_TestLagLength : Test lag order VAR models.
+% 29. VAR_Plot_fit      : Plot fit and residuals VAR models.
+% 30. VAR_TestBlockExo  : Test BlockExo hypothesis.
+% 31. vec               : Create a matrix stacking the columns of a matrix.
+% 32. VEC_johansen_CV   : Johansen test of cointegration.
+% 33. VEC_johansen_test : Critical values Johansen test of cointegration.
 
 % 01 Linear Models (12 functions).
 % 1.  armax_mlike       : Log-Likelihood ARMA/ARMAX(p,q) model using Kalman filter.
@@ -85,11 +86,12 @@
 % - SVAR_rec(lib)        : Structural VAR model, recursive identification scheme.
 % - SVEV_rec(lib)        : Structural VEC model, recursive identification scheme.
 % - TVPVAR(lib)          : Time varying parameter Structural VAR model, recursive identification scheme.
+% - TVPVAR_SV(lib)       : TVP SVAR model with stochastic volatility, recursive identification scheme.
 
 % 06 Factor Models (02 libraries and functions)
 % - DFM_v1               : DFM, with global and block/regional factors (1 layer).
 % - DFM_v2               : DFM, with global, block/regional and groups factors (2 layers).
-% 1. MIDAS_PCA_reg       : Mixed frequency model with PC factors and 
+% 1. MIDAS_PCA_reg       : Mixed frequency model with PC factors and Almon polinomials.
 % 2. PCA                 : Principal component analysis.
 % 3. PCA_reg             : Regression with principal component.
 % 4. PSL_reg             : Partial least squared regression.
